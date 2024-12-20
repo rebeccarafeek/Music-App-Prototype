@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="Rebecca Rafeek" content="Rebecca Rafeek" />
+
+    <title>WEB222 Music App</title>
+    <!-- Classless CSS Stylesheet (feel free to change) - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+
+    <!--Stylesheet for Cards-->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+<div>
+    <h1>Request a New Artist</h1>
+    <p>Want to see your favourite artist featured? Let us know!</p>
+</div>
+
+<main role="main">
+    <form id="artist-request-form" action="https://httpbin.org/post" method="POST">
+        <div class="form-group">
+            <label for="artistName">Artist Name:</label>
+            <input type="text" id="artistName" name="artistName" placeholder="Enter artist name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="genre">Music Genre:</label>
+            <input type="text" id="genre" name="genre" list="genres" placeholder="Select or type a genre" required>
+            <datalist id="genres">
+                <option value="Pop">
+                <option value="Rock">
+                <option value="Hip Hop">
+                <option value="R&B">
+                <option value="Jazz">
+                <option value="Classical">
+                <option value="Electronic">
+                <option value="Country">
+                <option value="Blues">
+                <option value="Indie">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="socialMedia">Social Media Links:</label>
+            <input type="url" name="socialMedia[]" placeholder="Add a social media link" required>
+        </div>
+
+        <div class="form-group">
+            <label for="songLinks">Songs or Videos:</label>
+            <div id="song-links">
+                <input type="url" name="song-links[]" placeholder="Add a song/video link" required>
+            </div>
+            <button type="button" id="add-song-link">Add Another Link</button>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="explicit" value="true">
+                Contains Explicit Lyrics
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="description" class="description-label">Why should this artist be added?</label>
+            <textarea id="description" name="description" rows="4" 
+                placeholder="Explain why this artist should be added" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+<script src="artistrequest.html"></script>
+</body>
+</html>
+    

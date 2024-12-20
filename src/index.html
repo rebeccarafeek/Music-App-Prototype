@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="Rebecca Rafeek" content="Rebecca Rafeek" />
+
+    <title>WEB222 Music App</title>
+    <!-- Classless CSS Stylesheet (feel free to change) - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+
+    <!--Stylesheet for Cards-->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <h1>VibeWave</h1>
+      <p>Your playlist for mellow moments and floating through life</p>
+    </header>
+
+    <a href="artistrequest.html" style="display: inline-block; background-color: rgb(25, 65, 77); color: #64b1d8; padding: 3px 10px; border-radius: 4px; text-decoration: none; margin-bottom: 1rem; border: 1px solid #3988af; font-size: 0.9rem;">Request New Artist</a>
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+    </nav>
+
+    <hr />
+
+    <main>
+      <h2 id="selected-artist">
+        Artist Information
+        <!-- Dynamically update the selected category title -->
+      </h2>
+
+      <!---Cards Section-->
+      <section id="song-cards" class="cards-container">
+      </section>
+    </main>
+
+    <footer>
+      <form class="newsletter-form" action="https://httpbin.org/post" method="POST">
+          <h3>Subscribe to Our Newsletter</h3>
+          <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      </form>
+  </footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

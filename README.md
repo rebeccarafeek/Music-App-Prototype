@@ -18,3 +18,6 @@ Tech Stack:
 -HTML5
 -CSS 
 -JavaScript
+
+Hosted using CloudFlare at: https://music-app-prototype.pages.dev/ 
+

@@ -6,16 +6,16 @@ This project was created as part of my **Web222 course**. It’s a prototype for
 
 ## ✨ Features  
 
-- ** Genre-Specific Focus**  
+- **Genre-Specific Focus**
   Showcases artists and songs from a dedicated music genre.  
 
-- ** Dynamic Content**  
+- **Dynamic Content**
   Browse through artists or search for songs using **JavaScript-powered interactivity**.  
 
-- ** Simulated Database**  
+- **Simulated Database**  
   Artist and song data are stored in **JavaScript Objects and Arrays**, organized into separate files for easy management.  
 
-- ** User Interaction**  
+- **User Interaction**  
   - **Sign-Up Form** to subscribe to the newsletter.  
   - **New Artist Submission Form** so users can suggest future featured artists.  
   - Emphasis on **hands-on JavaScript**, with no external databases required.  
